@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGOMAX | Impulsa tu Negocio</title>
+    <style>
+        /* ------------------------------
+        Estilos Generales
+        ------------------------------ */
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        }
+        body {
+        color: #333;
+        background: #fff;
+        }
+        header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 5%;
+        background: linear-gradient(90deg, #6c63ff, #ff6584);
+        color: white;
+        }
+        header h1 {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        }
+        header nav a {
+        color: white;
+        margin-left: 1.5rem;
+        text-decoration: none;
+        font-weight: 500;
+        transition: opacity 0.3s;
+        }
+        header nav a:hover {
+        opacity: 0.8;
+        }
+
+        /* ------------------------------
+        Hero Section
+        ------------------------------ */
+        .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 6rem 2rem;
+        background: linear-gradient(135deg, #6c63ff, #ff6584);
+        color: white;
+        }
+        .hero h2 {
+        font-size: 2.5rem;
+        max-width: 700px;
+        margin-bottom: 1rem;
+        }
+        .hero p {
+        font-size: 1.1rem;
+        max-width: 600px;
+        margin-bottom: 2rem;
+        }
+        .hero button {
+        background: white;
+        color: #6c63ff;
+        border: none;
+        padding: 0.9rem 2rem;
+        border-radius: 50px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        }
+        .hero button:hover {
+        background: #ff6584;
+        color: white;
+        transform: scale(1.05);
+        }
+
+        /* ------------------------------
+        Sección Acerca
+        ------------------------------ */
+        section {
+        padding: 5rem 8%;
+        text-align: center;
+        }
+        section h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #6c63ff;
+        }
+        section p {
+        max-width: 800px;
+        margin: 0 auto 2rem;
+        font-size: 1.1rem;
+        color: #555;
+        line-height: 1.6;
+        }
+
+        /* ------------------------------
+        Servicios
+        ------------------------------ */
+        .servicios {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+        }
+        .servicio {
+        background: #f9f9ff;
+        border-radius: 15px;
+        padding: 2rem;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+        }
+        .servicio:hover {
+        transform: translateY(-8px);
+        }
+        .servicio h4 {
+        color: #ff6584;
+        margin-bottom: 0.5rem;
+        }
+
+        /* ------------------------------
+        Beneficios
+        ------------------------------ */
+        .beneficios ul {
+        list-style: none;
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: left;
+        }
+        .beneficios li {
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+        padding-left: 1.5rem;
+        position: relative;
+        }
+        .beneficios li::before {
+        content: "✔";
+        color: #6c63ff;
+        position: absolute;
+        left: 0;
+        }
+
+        /* ------------------------------
+        Contacto
+        ------------------------------ */
+        .contacto form {
+        max-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        }
+        .contacto input, .contacto textarea {
+        padding: 0.8rem;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-size: 1rem;
+        }
+        .contacto button {
+        background: linear-gradient(90deg, #6c63ff, #ff6584);
+        border: none;
+        color: white;
+        padding: 0.9rem;
+        border-radius: 10px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s;
+        }
+        .contacto button:hover {
+        opacity: 0.9;
+        }
+
+        footer {
+        text-align: center;
+        padding: 2rem;
+        background: #f3f3f3;
+        color: #555;
+        font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LOGOMAX</h1>
+        <nav>
+        <a href="#acerca">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Impulsamos el crecimiento de las pequeñas empresas con estrategias digitales inteligentes</h2>
+        <p>En LOGOMAX ayudamos a las pymes a acceder a publicidad profesional, efectiva y asequible para competir en el mercado actual.</p>
+        <button onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Solicita tu diagnóstico gratuito</button>
+    </section>
+
+    <section id="acerca">
+        <h3>¿Quiénes somos?</h3>
+        <p>
+        LOGOMAX nace para solventar la necesidad de las pequeñas empresas que no cuentan con acceso a publicidad de alta calidad. 
+        Ofrecemos soluciones personalizadas que incluyen estrategias de marketing digital adaptadas a los objetivos y recursos de cada cliente.
+        Nuestro equipo de expertos crea campañas efectivas y brinda talleres para capacitar a los empresarios en el manejo de sus propias campañas.
+        </p>
+    </section>
+
+    <section id="servicios">
+        <h3>Servicios</h3>
+        <div class="servicios">
+            <div class="servicio">
+                <h4>Marketing en Redes Sociales</h4>
+                <p>Diseñamos y gestionamos campañas en Facebook, Instagram y más, aumentando tu visibilidad y engagement.</p>
+            </div>
+            <div class="servicio">
+                <h4>Publicidad en Motores de Búsqueda</h4>
+                <p>Optimizamos tu presencia en Google para atraer clientes potenciales de manera efectiva y asequible.</p>
+            </div>
+            <div class="servicio">
+                <h4>Capacitación Empresarial</h4>
+                <p>Brindamos talleres en marketing digital para que las pymes aprendan a gestionar sus propias campañas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="beneficios">
+        <h3>Beneficios de trabajar con LOGOMAX</h3>
+        <ul>
+            <li>Soluciones accesibles y personalizadas</li>
+            <li>Mayor alcance en redes sociales</li>
+            <li>Visibilidad competitiva frente a grandes marcas</li>
+            <li>Capacitación continua para tu equipo</li>
+        </ul>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <h3>Contáctanos</h3>
+        <p>Completa el formulario y recibe una asesoría gratuita.</p>
+        <form>
+            <input type="text" placeholder="Nombre completo" required />
+            <input type="email" placeholder="Correo electrónico" required />
+            <textarea rows="4" placeholder="Cuéntanos sobre tu negocio"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        © 2025 LOGOMAX | Todos los derechos reservados.
+    </footer>
+</body>
+</html>
